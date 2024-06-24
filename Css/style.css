@@ -75,7 +75,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url('images/back.jpg');
+  background-image: url('../images/body.avif');
 
   /* border: 1px solid black; */
 }
