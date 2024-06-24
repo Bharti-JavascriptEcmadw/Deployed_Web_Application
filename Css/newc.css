@@ -1,45 +1,85 @@
-body{
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
     background-image: url("https://img.freepik.com/premium-psd/christmas-background_908673-745.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0;
 }
 
-.main{
+/* Main container styles */
+.main {
     border: 2px solid black;
-    margin: auto;
-    width: 500px;
-    height: 50vh;
-    /* background-color: aqua; */
-    background-image: url("https://marketplace.canva.com/EAE6izFw84Q/1/0/800w/canva-black-minimalist-linktree-background-7ei7kHti8PY.jpg");
-    /* display: flex; */
-    /* align-items: center; */
-    color: white;
-    /* justify-content: center; */
+    width: 90%; /* Adjust to make it responsive */
+    max-width: 600px; /* Set a maximum width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-radius: 10px;
     text-align: center;
-    border-radius: 10% 20% 3%;
+    color: white;
 }
-.header2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 20px; */
-    margin: 20px;
-}
-.header1{
-    font-size: 38px;
 
+/* Header styles */
+.header {
+    margin-bottom: 20px;
 }
-.box1{
+
+.header h1 {
+    font-size: 2.5rem; /* Responsive font size */
+}
+
+.header1 {
+    font-size: 1.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Box styles */
+.box1 {
+    flex: 1; /* Equal width for all boxes */
     padding: 10px;
-    font-size: 30px;
-    background-color: rgb(160, 23, 175);
+    background-color: rgba(160, 23, 175, 0.8); /* Semi-transparent purple */
     margin: 10px;
-    border-radius: 20%;
+    border-radius: 10px;
 }
-.head1{
+
+.head {
+    font-size: 2rem; /* Responsive font size */
+}
+
+.head1 {
+    font-size: 1rem; /* Responsive font size */
     margin-top: 5px;
-    /* border: 1px solid white; */
-    /* background-color: red; */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header1 {
+        font-size: 1.2rem;
+    }
+
+    .box1 {
+        flex-basis: 45%; /* Adjust width for smaller screens */
+    }
 }
