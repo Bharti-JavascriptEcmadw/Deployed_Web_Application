@@ -75,7 +75,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url('../images/ll.gif');
+  background-image: url('../images/background.gif');
 
   /* border: 1px solid black; */
 }

@@ -7,7 +7,7 @@ function update(){
     let h=new Date().getHours();
     let m=new Date().getMinutes();
     let s =new Date().getSeconds();
-    let ampm="AM";
+    // let ampm="AM";
     console.log(h);
     if(h>12){
         h=h-12;
@@ -20,7 +20,7 @@ function update(){
     hour.innerHTML=h;
     min.innerHTML=m;
     sec.innerHTML=s;
-    amm.innerHTML=ampm;
+    // amm.innerHTML=ampm;
     setTimeout(()=> {
      update()
     },1000)
